@@ -17,3 +17,12 @@ I then have the main function running this whole operation (generatePassword()) 
 I only ran into one "bug". If you tried to generate a new password before refreshing the page, with different character types selected, master array still had stuff from the previous generation. For example, if you ran it once and excluded lower case characters, and ran it a second time to exclude upper case characters (without refreshing the page), you could still get upper case characters. I surprisingly guessed right the first time that masterArray just had those characters left over from the first time.
 
 Solution: In the function writePassword() I added a splice function to masterArray so that after the password is generated, all of masterArray is deleted. Now if you try to generate another password without refreshing the page, you are starting from a clean slate and won't run into an issues with character types.
+
+## github-pages
+https://fiskoal.github.io/password-generator/
+
+## Screenshots
+https://github.com/Fiskoal/Password-Generator/blob/master/Assets/1%20init.png
+https://github.com/Fiskoal/Password-Generator/blob/master/Assets/2%20(input)passwordlength.png
+https://github.com/Fiskoal/Password-Generator/blob/master/Assets/3%20(confirm)char-types.png
+https://github.com/Fiskoal/Password-Generator/blob/master/Assets/4%20successful-password-generation.png
